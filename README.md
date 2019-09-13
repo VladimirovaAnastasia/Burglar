@@ -32,7 +32,7 @@
  
  Для функций ``fix_marks(child)`` и ``remove_chastisements(child)`` добываем экземпляр модели Schoolkid командой:
  
- ``schoolkid=Schoolkids.objects.get(full_name__contains="Фролов Иван")``
+ ``child=Schoolkids.objects.get(full_name__contains="Фролов Иван")``
  
  Заостряем свое внимание на оценках и замечаниях нужного ученика (в данном случае Фролова Ивана) и запускаем функции. 
  В результате все плохие оценки стали пятерками, а замечания удалены! 
