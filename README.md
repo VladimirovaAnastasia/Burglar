@@ -17,8 +17,8 @@
  
  В вашем распоряжении 3 функции:
  1) Для создания похвалы ученику - ``create_commendation(name, subject)``, где name - имя ученика, subject - предмет, по которому хочется получить похвалу.
- 2) Для исправления всех плохих оценок (2 и 3) на 5 - ``fix_marks(schoolkid)``, где schoolkid - экземпляр модели Schoolkid.
- 3) Для удаления всех замечаний ученика - ``remove_chastisements(schoolkid)``,  где schoolkid - экземпляр модели Schoolkid.
+ 2) Для исправления всех плохих оценок (2 и 3) на 5 - ``fix_marks(child)``, где child - экземпляр модели Schoolkid.
+ 3) Для удаления всех замечаний ученика - ``remove_chastisements(child)``,  где child - экземпляр модели Schoolkid.
 ## Примеры использования для каждой функции
  Командой ``python manage.py shell`` мы запускаем shell
  
@@ -30,7 +30,7 @@
  
  Должна появится рандомная похвала. 
  
- Для функций ``fix_marks(schoolkid)`` и ``remove_chastisements(schoolkid)`` добываем экземпляр модели Schoolkid командой:
+ Для функций ``fix_marks(child)`` и ``remove_chastisements(child)`` добываем экземпляр модели Schoolkid командой:
  
  ``schoolkid=Schoolkids.objects.get(full_name__contains="Фролов Иван")``
  
