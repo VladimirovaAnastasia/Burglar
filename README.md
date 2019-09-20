@@ -20,9 +20,9 @@
  2) Для исправления всех плохих оценок (2 и 3) на 5 - ``fix_marks(child)``, где child - экземпляр модели Schoolkid.
  3) Для удаления всех замечаний ученика - ``remove_chastisements(child)``,  где child - экземпляр модели Schoolkid.
 ## Примеры использования для каждой функции
- Командой ``python manage.py shell`` мы запускаем shell
+ Командой ``python manage.py shell`` мы запускаем shell.
  
- Импортируем нужную функцию командой, например,  ``from scripts import create_commendation`` ( Аналогично для ``fix_marks(child)`` и ``remove_chastisements(child)``)
+ Импортируем нужную функцию командой, например,  ``from scripts import create_commendation`` ( Аналогично для ``fix_marks(child)`` и ``remove_chastisements(child)``).
  
  Для проверки заходим в электронный дневник на страничку текущего ученика и исследуем ее данные. В данном случае заостряем свое внимание на комментариях учителей по поводу поведения ученика. Запускаем. 
  
@@ -34,10 +34,10 @@
  
  ``child=Schoolkids.objects.get(full_name__contains="Фролов Иван")``
  
- P.S. не забываем импортировать модель ученика Schoolkids командой ``from datacenter.models import Schoolkids ``
+ P.S. не забываем импортировать модель ученика Schoolkids командой ``from datacenter.models import Schoolkids ``.
  
  Заостряем свое внимание на оценках и замечаниях нужного ученика (в данном случае Фролова Ивана) и запускаем функции. 
  В результате все плохие оценки стали пятерками, а замечания удалены! 
 
 ## Цель проекта
-Код написан в образовательных целях на онлайн-курсе для веб-разработчиков [dvmn.org](https://dvmn.org/modules/) 
+Код написан в образовательных целях на онлайн-курсе для веб-разработчиков [dvmn.org](https://dvmn.org/modules/) .
