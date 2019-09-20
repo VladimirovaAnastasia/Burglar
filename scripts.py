@@ -21,7 +21,7 @@ def create_commendation(name, subject):
                                     group_letter=child.group_letter,
                                     subject__title=subject).order_by('-date')
     lesson = lessons[0]
-    compliments = ["Молодец!", " Отличнос!", "Великолепно!","Заебись"]
+    compliments = ["Молодец!", " Отлично!", "Великолепно!", "Так держать"]
     compliment = random.choice(compliments)
     Commendation.objects.create(text=compliment,
                                 created=lesson.date,
